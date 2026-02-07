@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <meta name="author" content="Abdelouahad mdaoued">
+  </head>
+  <body>
+    <div class="background-decor">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Mes Tâches</h1>
+        <div class="date-display" id="current-date"></div>
+      </header>
+
+      <div class="input-group">
+        <input type="text" id="todo-input" placeholder="Ajouter une nouvelle tâche..." />
+        <button id="add-btn"><i class="fas fa-plus"></i></button>
+      </div>
+
+      <div class="filters">
+        <button id="filter-all" class="active">Toutes</button>
+        <button id="filter-active">En cours</button>
+        <button id="filter-completed">Terminées</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+
+      <div id="empty-msg" class="hidden">
+        <i class="fa-solid fa-feather-pointed"></i>
+        <p>Libérez votre esprit, notez vos tâches.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
